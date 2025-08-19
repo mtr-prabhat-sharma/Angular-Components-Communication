@@ -1,0 +1,66 @@
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.todos-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.todos-table th, .todos-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.todos-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.todos-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* light gray */
+}
+
+.todos-table tr:nth-child(odd) {
+  background-color: #ffffff; /* white */
+}
+
+.todos-table tr:hover {
+  background-color: #f1f1f1; /* highlight on hover */
+}
+
+.btn-container {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  gap: 12px;                /* spacing between buttons */
+}
+
+.btn-container button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-container button:hover {
+  background-color: #45a049; /* slightly darker on hover */
+}
+
+.btn-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
