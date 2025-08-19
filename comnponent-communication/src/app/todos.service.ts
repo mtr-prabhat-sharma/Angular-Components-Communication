@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +9,7 @@ export class TodosService {
 
   readonly apiUrl = 'https://jsonplaceholder.typicode.com/todos';
   private statusSubject$ = new BehaviorSubject<any>(null);
+  currentStatus: Observable<any> = this.statusSubject$.asObservable();
 
   constructor(private http: HttpClient) { }
 

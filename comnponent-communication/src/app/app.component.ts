@@ -27,6 +27,11 @@ export class AppComponent implements OnInit {
       this.paginatedData = this.todosList
       .slice(0, 10);
     });
+
+    this.todos.currentStatus.subscribe((res) => {
+      console.log("subject", res)
+      this.selectedStatus = res;
+    })
   }
 
   getTableHeaders(data: any): string[] {
