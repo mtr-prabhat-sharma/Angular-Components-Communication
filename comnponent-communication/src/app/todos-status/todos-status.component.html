@@ -1,1 +1,7 @@
-<p>todos-status works!</p>
+<div class="container">
+    <select (change)="onStatusChange($event)">    
+        @for (todos of todosStatus; track todos) {
+            <option>{{todos}}</option>
+        } 
+    </select>
+</div>
