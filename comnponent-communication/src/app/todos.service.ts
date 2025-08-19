@@ -8,7 +8,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class TodosService {
 
   readonly apiUrl = 'https://jsonplaceholder.typicode.com/todos';
-  private statusSubject$ = new BehaviorSubject<any>(null);
+  private statusSubject$ = new BehaviorSubject<any>('All');
   currentStatus: Observable<any> = this.statusSubject$.asObservable();
 
   constructor(private http: HttpClient) { }
