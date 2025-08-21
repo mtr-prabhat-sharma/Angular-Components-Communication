@@ -18,4 +18,5 @@ export class TodosStatusComponent {
     this.statusChanged.emit(value);
     this.todos.changeStatus(value);
   }
+  
 }

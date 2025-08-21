@@ -11,7 +11,7 @@ describe('TodosStatusComponent', () => {
     await TestBed.configureTestingModule({
       imports: [TodosStatusComponent],
        providers: [
-        provideHttpClient(), // ✅ add only if TodosStatusComponent uses HttpClient
+        provideHttpClient(),
 
       ]
     })
